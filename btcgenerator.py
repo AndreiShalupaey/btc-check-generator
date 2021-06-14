@@ -1,14 +1,25 @@
-import random
-print("Created by Ugnikinn (t.me/ugnikinn) for Hackers Academy (t.me/academyofhackers)\n")
+from telethon import TelegramClient, events, sync
+import random, time
+
+print("Created by Ugnikinn (t.me/ugnikinn) for Hackers Academy (t.me/academyofhackers)")
+print("Допилино @andreishal(https://github.com/AndreiShalupaey)\n")
+
+api_id = '1952981'
+api_hash = '5a0006a11053b5150d8e0995b49213a8'
+
+client = TelegramClient('session', api_id, api_hash)
+
+client.start()
+
 count = int(input("Сколько чеков надо?\n– "))
 print("Окей, жди.\n")
-f = open("BTChecks.txt", "w")
+
 chars = "0123456789abcdef"
-check2 = ""
+check = ""
 for x in range(count):
-    check = "https://t.me/BTC_CHANGE_BOT?start=c_"
+    check = ""
     for i in range(1, 30):
         check = check + random.choice(chars)
-    check2 = check2 + check + "\n\n\n"
-f.write(check2)
-print("Чеки записаны в файл BTChecks.txt. Принимай работу!")
+    client.send_message('BTC_CHANGE_BOT', '/start c_' + check)
+    print(x, check)
+    time.sleep(1)
