@@ -6,4 +6,5 @@
 <code>cd && cd btc-check-generator && python btcgenerator.py</code>
 # PS:
 Сделал <a href="https://t.me/ugnikinn/">Ugnikinn</a> для <a href="https://t.me/academyofhackers/">Hackers Academy</a>
+
 Допилил <a href="https://github.com/AndreiShalupaey">@andreishal</a>
