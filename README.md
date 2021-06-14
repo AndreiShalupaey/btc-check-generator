@@ -1,5 +1,5 @@
 # BTC Generator:
-Генератор BTC чеков для активации в Telegram боте @BTC_CHANGE_BOT.
+Генератор + активатор BTC чеков в Telegram боте @BTC_CHANGE_BOT.
 # Установка (BASH):
 <code>pkg install git python3 -y && pip install telethon && cd && git clone https://github.com/academyofhackers/btc-check-generator/</code>
 # Использование (BASH):
